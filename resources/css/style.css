@@ -1,0 +1,23 @@
+/*Universal*/
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding-top: 50px;
+}
+
+/*Navigation bar*/
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    background-color: #f8f8f8;
+    color: blue;
+}
+
+.active {
+    /*background-color: #f8f8f8;*/
+    /*color: blue;*/
+}
+
+
