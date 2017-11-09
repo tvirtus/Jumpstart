@@ -1,23 +1,94 @@
 /*Universal*/
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
-body {
+main {
     padding-top: 50px;
 }
 
-/*Navigation bar*/
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:focus,
-.nav-pills > li.active > a:hover {
-    background-color: #f8f8f8;
-    color: blue;
+/*Navigation for screens under 768px*/
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 95px;
+    }
 }
 
-.active {
-    /*background-color: #f8f8f8;*/
-    /*color: blue;*/
+/*Navigation bar*/
+.nav {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
+
+.navbar {
+    padding: 0 1rem;
+}
+
+.nav-pills > li > a {
+    background-color: #f8f8f8;
+    color: #8c8c8c;
+}
+
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+    background-color: #f8f8f8;
+    color: #595959;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    background-color: #f8f8f8;
+    color: #399bd1;
+}
+
+/*Jumbotron*/
+
+/*Carousel*/
+
+/*Banner text*/
+.carousel .jumbotron {
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    /*text-align: center;*/
+    color: white;
+    background-position: 0 0;
+    /*padding: 11.85rem 0 29.5rem 0;*/
+}
+
+.carousel h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 7.1rem;
+    /*width: 51.3rem;*/
+    text-align: center;
+}
+
+.carousel h2 {
+    /*text-align: center;*/
+    /*width: 51.3rem;*/
+    /*align-self: center;*/
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.carousel .jumbotron-bike {
+    background: no-repeat center/100% url("../images/jumbotron-bike.jpg");
+}
+
+.carousel .jumbotron-beer {
+    background: no-repeat transparent center/100% url("../images/jumbotron-beer.jpg");
+}
+
+.carousel .jumbotron-flowers {
+    background: no-repeat transparent center/100% url("../images/jumbotron-flowers.jpg");
+}
+
+.carousel .jumbotron-duffel {
+    background: no-repeat transparent center/100% url("../images/jumbotron-duffel.jpg");
+}
+
+
 
 

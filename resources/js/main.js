@@ -15,5 +15,12 @@ $(document).ready(function () {
         .resize(resize)
         .trigger('resize'); //end of stacking logic
 
-
+    // Jumbotron - carousel
+    $('.carousel').slick({
+        infinite: true,
+        fade: true,
+        speed: 300,
+        autoplay: true,
+        dots: true
+    });
 });
