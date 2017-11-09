@@ -50,25 +50,25 @@ main {
 
 /*Banner text*/
 .carousel .jumbotron {
-    /*width: 100vw;*/
-    /*height: 100vh;*/
-    /*text-align: center;*/
-    color: white;
+    height: 35rem;
     background-position: 0 0;
-    /*padding: 11.85rem 0 29.5rem 0;*/
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    color: white;
+    text-align: center;
+    width: 51.3rem;
+    margin-top: 15%;
 }
 
 .carousel h1 {
     font-family: 'Monoton', cursive;
     font-size: 7.1rem;
-    /*width: 51.3rem;*/
-    text-align: center;
 }
 
 .carousel h2 {
-    /*text-align: center;*/
-    /*width: 51.3rem;*/
-    /*align-self: center;*/
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
@@ -88,7 +88,3 @@ main {
 .carousel .jumbotron-duffel {
     background: no-repeat transparent center/100% url("../images/jumbotron-duffel.jpg");
 }
-
-
-
-
