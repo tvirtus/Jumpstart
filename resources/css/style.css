@@ -22,6 +22,7 @@ main {
 img {
     width: 100%;
     display: block;
+    opacity: 0.7;
 }
 
 /*Navigation bar*/
@@ -90,6 +91,10 @@ img {
 }
 
 /*Articles*/
+.wrapper {
+    padding-bottom: 5.58rem;
+}
+
 .row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -105,17 +110,62 @@ img {
 
 .wrapper h1 {
     color: #399bd1;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 .wrapper span {
     display: block;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, .7);
 }
 
-/*.col-sm-6 {*/
-    /*border: 2px solid blue;*/
-/*}*/
+#prod-category h1 {
+    font-size: 1.3rem;
+}
 
-/*.col-sm-12 {*/
-    /*border: 2px solid green;*/
-/*}*/
+/*Wrapper for screens under 768px*/
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        padding: 0 10%;
+    }
+}
+
+/*Wrapper for screens under 680px*/
+@media only screen and (max-width: 680px) {
+    .wrapper {
+        padding: 0 2%;
+    }
+}
+
+.col-sm-6 {
+    border: 2px solid blue;
+}
+
+.col-sm-12 {
+    border: 2px solid green;
+}
+
+/*Footer*/
+footer {
+    padding: 5.2rem 17%;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+footer p {
+    padding: 1.4rem 0;
+}
+
+/*Footer for screens under 768px*/
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 5.2rem 0;
+    }
+}
 
