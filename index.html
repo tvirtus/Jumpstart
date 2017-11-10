@@ -16,29 +16,25 @@
 <body>
 <!--Header-->
 <header>
-    <nav>
-        <div class="container-fluid">
-            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <ul class="nav navbar-left nav-pills">
-                    <li class="active" role="presentation">
-                        <a href="">Explore</a>
-                    </li>
-                    <li class="" role="presentation">
-                        <a href="">Start a project</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="">About Us</a>
-                    </li>
-                </ul>
-                <!--.navbar-right pulls logo to the right on the navigation bar-->
-                <!--hidden-xs hides logo on screens under 769px-->
-                <div class="navbar-header navbar-right hidden-xs">
-                    <a id="logo" class="navbar-brand">
-                        <img src="resources/images/logo.png">
-                    </a>
-                </div>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+    <nav class="container-fluid">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="active" role="presentation">
+                    <a href="#">Explore</a>
+                </li>
+                <li class="" role="presentation">
+                    <a href="#">Start a project</a>
+                </li>
+                <li role="presentation">
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+            <!--.navbar-right pulls logo to the right on the navigation bar-->
+            <!--hidden-xs hides logo on screens under 769px-->
+            <a href="#" id="logo" class="navbar-brand navbar-right hidden-xs">
+                <img src="resources/images/logo.png">
+            </a>
+        </div>
     </nav>
 </header>
 <!--Main-->
@@ -78,81 +74,103 @@
         <!--</div>-->
 
     </section>
-    <!--Featured project-->
-    <!--grid-->
-    <div class="container">
-        <div class="item item-1"></div>
-        <div class="item item-2"></div>
-        <div class="item item-3"></div>
-    </div>
-    <!--grid-end-->
-    <section>
-        <article>
-            <div id="barn">
+    <section class="wrapper">
+        <!--Featuread project-->
+        <div class="row">
+            <h1 class="col-sm-12">Featured project</h1>
+        </div>
+        <div class="row">
+            <div class="image-container col-sm-6 col-xs-12">
                 <img src="resources/images/featured-project.png" alt="red house on a mountainous background">
             </div>
-            <h2>DeFrost: A Documentary</h2>
-            <p class="author">by Leo De Firenze</p>
-            <p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a
-                story
-                about my mother's childhood. This film attempts to capture vignettes of her upbringing â€” her
-                family,
-                friends, pets, and eventual depature from a freezing valley in Northern Italy â€” through beautiful
-                cinematography and narration.</p>
-        </article>
-    </section>
-    <section>
-        <h1>Product Categories</h1>
-        <span>Art</span>
-        <span>Books</span>
-        <span>Crystals</span>
-        <span>Design</span>
-        <span>Doodles</span>
-        <span>Deedlybobs</span>
-        <span>Farming</span>
-        <span>Gadgets</span>
-        <span>Hoverboards</span>
-        <span>Jams, Jellies, Etc.</span>
-        <span>Magazines</span>
-        <span>Plants</span>
-        <span>Snakes & Snake Equipment</span>
-        <span>Tables</span>
-        <span>Ventriliquist Figures</span>
-        <span>Yoyos</span>
-    </section>
-    <!--Projects-->
-    <section>
-        <h1>Projects</h1>
-        <article>
-            <div>
-                <img src="resources/images/project1.png">
+            <div class="col-sm-3 col-xs-6">
+                <div class="row">
+                    <h2 class="col-sm-12">DeFrost: A Documentary</h2>
+                </div>
+                <div class="row">
+                    <p class="col-sm-12 author">by Leo De Firenze</p>
+                </div>
+                <div class="row">
+                    <p class="col-sm-12">DeFrost is a documentary about growing up in a little red house in a cold,
+                        harsh valley.
+                        This
+                        is a
+                        story
+                        about my mother's childhood. This film attempts to capture vignettes of her upbringing
+                        â€”
+                        her
+                        family,
+                        friends, pets, and eventual depature from a freezing valley in Northern Italy â€”
+                        through
+                        beautiful
+                        cinematography and narration.</p>
+                </div>
             </div>
-            <h2>The Right Tights</h2>
-            <p class="author">by Riley Mae</p>
-            <p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more
-                ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all
-                backers.</p>
-        </article>
-        <article>
-            <div>
-                <img src="resources/images/project2.png">
+            <div class="col-sm-3 col-xs-6">
+                <div class="row">
+                    <h1 class="col-sm-12">Product Categories</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span>Art</span>
+                        <span>Books</span>
+                        <span>Crystals</span>
+                        <span>Design</span>
+                        <span>Doodles</span>
+                        <span>Deedlybobs</span>
+                        <span>Farming</span>
+                        <span>Gadgets</span>
+                        <span>Hoverboards</span>
+                        <span>Jams, Jellies, Etc.</span>
+                        <span>Magazines</span>
+                        <span>Plants</span>
+                        <span>Snakes & Snake Equipment</span>
+                        <span>Tables</span>
+                        <span>Ventriliquist Figures</span>
+                        <span>Yoyos</span>
+                    </div>
+                </div>
             </div>
-            <h2>Peppermint Smart Home</h2>
-            <p class="author">by Brian McDonald</p>
-            <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made
-                Peppermint
-                easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
-        </article>
-        <article>
-            <div>
-                <img src="resources/images/project3.png">
+        </div>
+        <!--Projects-->
+        <div class="row">
+            <h1 class="col-sm-12">Projects</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="image-container col-sm-12">
+                    <img src="resources/images/project1.png">
+                </div>
+                <h2 class="col-sm-12">The Right Tights</h2>
+                <p class="author col-sm-12">by Riley Mae</p>
+                <p class="col-sm-12">These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to
+                    last (no more
+                    ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all
+                    backers.</p>
             </div>
-            <h2>American Streetlife</h2>
-            <p class="author">by Patrick Wallace</p>
-            <p>I've been traveling around the United States for the past two years. I've slept on hundreds of
-                couches,
-                more than a few benches, and captured my experiences in this 120 page photo album.</p>
-        </article>
+            <div class="col-sm-4">
+                <div class="image-container col-sm-12">
+                    <img src="resources/images/project2.png">
+                </div>
+                <h2 class="col-sm-12">Peppermint Smart Home</h2>
+                <p class="author col-sm-12">by Brian McDonald</p>
+                <p class="col-sm-12">Instantly upgrade your home with technology that keeps your family and home safe.
+                    We've made
+                    Peppermint
+                    easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="image-container col-sm-12">
+                    <img src="resources/images/project3.png">
+                </div>
+                <h2 class="col-sm-12">American Streetlife</h2>
+                <p class="author col-sm-12">by Patrick Wallace</p>
+                <p class="col-sm-12">I've been traveling around the United States for the past two years. I've slept on
+                    hundreds of
+                    couches,
+                    more than a few benches, and captured my experiences in this 120 page photo album.</p>
+            </div>
+        </div>
     </section>
 </main>
 <!--Footer-->
@@ -166,7 +184,6 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!--<script type="text/javascript" src="resources/slick/slick.min.js"></script>-->
 <script type="text/javascript" src="resources/js/main.js"></script>
 </body>
 </html>

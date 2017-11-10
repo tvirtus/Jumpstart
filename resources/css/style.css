@@ -8,11 +8,20 @@ main {
     padding-top: 50px;
 }
 
-/*Navigation for screens under 768px*/
+/*Body padding for screens under 768px*/
 @media only screen and (max-width: 768px) {
-    body {
-        padding-top: 95px;
+    main {
+        padding-top: 135px;
     }
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    display: block;
 }
 
 /*Navigation bar*/
@@ -26,41 +35,32 @@ main {
     padding: 0 1rem;
 }
 
-.nav-pills > li > a {
-    background-color: #f8f8f8;
-    color: #8c8c8c;
-}
-
-.nav-pills > li > a:hover,
-.nav-pills > li > a:focus {
-    background-color: #f8f8f8;
-    color: #595959;
-}
-
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
     background-color: #f8f8f8;
     color: #399bd1;
 }
 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #595959;
+}
+
 /*Jumbotron*/
-
-/*Carousel*/
-
-/*Banner text*/
 .carousel .jumbotron {
-    height: 35rem;
     background-position: 0 0;
     padding: 0;
     margin: 0;
+    border: 2px solid red;
 }
 
 .container {
     color: white;
     text-align: center;
-    width: 51.3rem;
-    margin-top: 15%;
+    /*width: 51.3rem;*/
+    /*margin-top: 15%;*/
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .carousel h1 {
@@ -88,3 +88,34 @@ main {
 .carousel .jumbotron-duffel {
     background: no-repeat transparent center/100% url("../images/jumbotron-duffel.jpg");
 }
+
+/*Articles*/
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper h1 {
+    color: #399bd1;
+}
+
+.wrapper span {
+    display: block;
+}
+
+/*.col-sm-6 {*/
+    /*border: 2px solid blue;*/
+/*}*/
+
+/*.col-sm-12 {*/
+    /*border: 2px solid green;*/
+/*}*/
+
