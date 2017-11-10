@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     //Stack navigation menu for screens under 768
     var $window = $(window),
         $html = $('.nav-pills');
@@ -17,10 +18,22 @@ $(document).ready(function () {
 
     // Jumbotron - carousel
     $('.carousel').slick({
-        infinite: true,
-        fade: true,
-        speed: 200,
+        arrows: false,
+        dragable: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        accessibility: false,
         autoplay: true,
-        dots: false
+        autoplaySpeed: 4000
+    });
+
+//    Hide header on scroll
+    $(window).scroll(function () {
+        var $header = $('div.navbar');
+        $(window).scrollTop() >=
+        // aucounting for screen size when hiding/showing the header
+        ($(window).width() < 768 ? 135 : 50)
+            ? $header.slideUp('slow')
+            : $header.slideDown('fast');
     });
 });
