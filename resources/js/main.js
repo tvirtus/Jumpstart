@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    /*Header*/
+    /* Header */
     // Hide header on scroll
     $(window).scroll(function () {
         var $header = $('.navbar');
@@ -29,7 +29,8 @@ $(document).ready(function () {
     $window
         .resize(resize)
         .trigger('resize'); //end of stacking logic
-    // end of header logic
+
+    /* end of header logic */
 
     /* Jumbotron */
     //Slick carousel
@@ -47,6 +48,6 @@ $(document).ready(function () {
     var $jumpInButton = '<a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Jump in</a>';
     $('.text-container').append($jumpInButton); //end of jumbotron Jump in Button logic
 
-    // end of jumbotron logic
+    /* end of jumbotron logic */
 });
 
