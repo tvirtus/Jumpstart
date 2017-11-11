@@ -1,7 +1,7 @@
 /*Universal*/
 html {
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 main {
@@ -18,6 +18,9 @@ main {
 /*Images*/
 .image-container {
     overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,17 +102,40 @@ img:hover {
 
 /*Jumbotron*/
 .carousel .jumbotron {
-    background-position: 0 0;
-    padding: 0;
-    margin: 0;
+    height: 44rem;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.text-container {
-    color: white;
-    text-align: center;
+.carousel .jumbotron-bike {
+    background: url("../images/jumbotron-bike.jpg") no-repeat center;
+}
+
+.carousel .jumbotron-beer {
+    background: url("../images/jumbotron-beer.jpg") no-repeat center;
+}
+
+.carousel .jumbotron-flowers {
+    background: url("../images/jumbotron-flowers.jpg") no-repeat center;
+}
+
+.carousel .jumbotron-duffel {
+    background: url("../images/jumbotron-duffel.jpg") no-repeat center;
+}
+
+.carousel .text-container {
+    border: 3px solid yellow;
     width: 51.3rem;
-    margin-top: 15%;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    max-width: 95%;
+    margin-top: 17%;
 }
 
 .carousel h1 {
@@ -122,20 +148,11 @@ img:hover {
     font-weight: 600;
 }
 
-.carousel .jumbotron-bike {
-    background: no-repeat center/100% url("../images/jumbotron-bike.jpg");
-}
-
-.carousel .jumbotron-beer {
-    background: no-repeat transparent center/100% url("../images/jumbotron-beer.jpg");
-}
-
-.carousel .jumbotron-flowers {
-    background: no-repeat transparent center/100% url("../images/jumbotron-flowers.jpg");
-}
-
-.carousel .jumbotron-duffel {
-    background: no-repeat transparent center/100% url("../images/jumbotron-duffel.jpg");
+/*Jumbotron for screens under 768px*/
+@media only screen and (max-width: 768px) {
+    .carousel h1 {
+        font-size: 5.7rem;
+    }
 }
 
 /*Articles*/
@@ -156,6 +173,9 @@ img:hover {
 }
 
 .row > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
 }
