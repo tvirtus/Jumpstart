@@ -44,10 +44,6 @@ $(document).ready(function () {
         autoplaySpeed: 4000
     }); // end of slick carousel logic
 
-    // jumbotron Jump in button
-    var $jumpInButton = '<a class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Jump in</a>';
-    $('.text-container').append($jumpInButton); //end of jumbotron Jump in Button logic
-
     /* end of jumbotron logic */
 });
 
