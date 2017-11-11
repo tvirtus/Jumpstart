@@ -102,6 +102,7 @@ img:hover {
 
 /*Jumbotron*/
 .carousel .jumbotron {
+    padding-top: 10rem;
     height: 44rem;
     text-align: center;
     color: white;
@@ -134,7 +135,6 @@ img:hover {
 .carousel .text-container {
     width: 51.3rem;
     max-width: 95%;
-    margin-top: 17%;
 }
 
 .carousel h1 {
